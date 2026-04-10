@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="algorithms">
+      <UniqueIdentifier>{f4dc2f12-bc0d-44be-ad2a-38318878520f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factory">
+      <UniqueIdentifier>{5d34742d-c6e0-4474-942e-b68066c7115f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="command">
+      <UniqueIdentifier>{db739e82-c44d-4f4b-9c31-a78f5bbe3c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memento">
+      <UniqueIdentifier>{501f444f-7cd9-4764-848a-aacf3df4376f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="facade">
+      <UniqueIdentifier>{b13bcb43-9123-4f6a-9847-8e75d24c3f0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="observer">
+      <UniqueIdentifier>{760d038d-20c2-418b-8612-0ad4e8a9529b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{611aad85-1e17-4a73-bc5e-38139676d5e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlgorithmVisualizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_sort.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SortStrategy.h">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="BubbleSort.h">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSort.h">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeSort.h">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="TimedSortDecorator.h">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="SortFactory.h">
+      <Filter>factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="SwapCommand.h">
+      <Filter>command</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayMemento.h">
+      <Filter>memento</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingFacade.h">
+      <Filter>facade</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>observer</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
