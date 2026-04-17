@@ -281,7 +281,11 @@ cmake --build .
 
 ---
 ---
+##  Інтерфейс застосунку
 
+<p align="center">
+  <img src="lab2/img/Screenshot%202026-04-17%20135322.png" width="600"/>
+</p>
 ##  Висновок
 
 
