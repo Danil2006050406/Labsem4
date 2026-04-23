@@ -1,0 +1,127 @@
+\chapter{Лабораторна робота №3b }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Лабораторна робота №3b@{Лабораторна робота №3b}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Паралельне мультипоточне програмування}{Паралельне мультипоточне програмування}}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Автор}{Автор}}\label{md__r_e_a_d_m_e_autotoc_md2}
+Сахно Данило Студент КНУ ім. Тараса Шевченка Факультет комп\textquotesingle{}ютерних наук та кібернетики
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{\texorpdfstring{Опис роботи}{Опис роботи}}\label{md__r_e_a_d_m_e_autotoc_md4}
+У даній лабораторній роботі реалізовано послідовну та паралельну версії алгоритму сортування злиттям (Merge Sort) з використанням технологій мультипоточного програмування.
+
+Метою роботи є:\+
+
+
+\begin{DoxyItemize}
+\item дослідження ефективності паралельних алгоритмів
+\item порівняння часу виконання з послідовною реалізацією
+\item реалізація зручного графічного інтерфейсу
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{\texorpdfstring{Реалізовано}{Реалізовано}}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyItemize}
+\item Послідовний алгоритм Merge Sort
+\item Паралельний Merge Sort (з використанням багатопоточності)
+\item Графічний інтерфейс користувача (Qt)
+\item Порівняння результатів роботи алгоритмів
+\item Вимірювання часу виконання
+\item Збереження результатів у CSV-\/файл
+\item Виконання алгоритму у фоновому потоці (без блокування GUI)
+\item Юніт-\/тести (Google Test)
+\item Документація коду (Doxygen)
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysection{\texorpdfstring{Архітектура та ООП}{Архітектура та ООП}}\label{md__r_e_a_d_m_e_autotoc_md8}
+У проєкті використано об’єктно-\/орієнтований підхід:\+
+
+
+\begin{DoxyItemize}
+\item {\bfseries{\doxylink{class_i_sorter}{ISorter}}} — абстрактний інтерфейс сортування
+\item {\bfseries{\doxylink{class_sequential_merge_sorter}{Sequential\+Merge\+Sorter}}} — послідовна реалізація
+\item {\bfseries{\doxylink{class_parallel_merge_sorter}{Parallel\+Merge\+Sorter}}} — паралельна реалізація
+\item {\bfseries{\doxylink{class_sort_context}{Sort\+Context}}} — реалізація патерну {\itshape Strategy}
+\end{DoxyItemize}
+
+Це дозволяє:\+
+
+
+\begin{DoxyItemize}
+\item легко змінювати алгоритм під час виконання
+\item розширювати систему новими алгоритмами
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysection{\texorpdfstring{Мультипоточність}{Мультипоточність}}\label{md__r_e_a_d_m_e_autotoc_md10}
+Паралельна версія алгоритму використовує:\+
+
+
+\begin{DoxyItemize}
+\item поділ задачі на підзадачі
+\item виконання частин сортування у різних потоках
+\end{DoxyItemize}
+
+Це дозволяє значно прискорити обробку великих масивів даних.
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysection{\texorpdfstring{Тестування}{Тестування}}\label{md__r_e_a_d_m_e_autotoc_md12}
+Було реалізовано юніт-\/тести з використанням {\bfseries{Google Test}}, які перевіряють:\+
+
+
+\begin{DoxyItemize}
+\item коректність сортування
+\item обробку порожніх масивів
+\item роботу з одним елементом
+\item відповідність результатів паралельної та послідовної версій
+\item роботу на великих масивах
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysection{\texorpdfstring{Результати}{Результати}}\label{md__r_e_a_d_m_e_autotoc_md14}
+
+\begin{DoxyTable}{3}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Розмір масиву  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Sequential (ms)  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Parallel (ms)  \\
+1 000  &1.\+7589 ms  &8.\+6134 ms  \\
+10 000  &16.\+7662 ms  &4.\+1445 ms  \\
+100 000  &103.\+194 ms  &27.\+2435 ms  \\
+200 000  &191.\+05 ms  &53.\+109 ms  \\
+\end{DoxyTable}
+
+
+Результати автоматично зберігаються у файл {\ttfamily performance.\+csv}.
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md16}{}\doxysection{\texorpdfstring{Висновок}{Висновок}}\label{md__r_e_a_d_m_e_autotoc_md16}
+Паралельна реалізація алгоритму показує кращу продуктивність при великих обсягах даних завдяки використанню декількох потоків.
+
+Водночас для малих масивів накладні витрати на створення потоків можуть зменшувати ефективність.
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md18}{}\doxysection{\texorpdfstring{Як запустити}{Як запустити}}\label{md__r_e_a_d_m_e_autotoc_md18}
+
+\begin{DoxyEnumerate}
+\item Зібрати проєкт через CMake
+\item Запустити програму
+\item Ввести розмір масиву
+\item Натиснути кнопку {\bfseries{Run Sort}}
+\item Переглянути результати
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md20}{}\doxysection{\texorpdfstring{Використані технології}{Використані технології}}\label{md__r_e_a_d_m_e_autotoc_md20}
+
+\begin{DoxyItemize}
+\item C++17
+\item Qt (Widgets, Concurrent)
+\item STL
+\item std::\+thread /\+ Qt\+Concurrent
+\item Google Test
+\item CMake
+\item Doxygen
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+ 

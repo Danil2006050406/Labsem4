@@ -1,0 +1,17 @@
+\doxysection{parallelmergesorter.\+h}
+\hypertarget{parallelmergesorter_8h_source}{}\label{parallelmergesorter_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}ISorter.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_parallel_merge_sorter}{ParallelMergeSorter}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_i_sorter}{ISorter}}\ \{}
+\DoxyCodeLine{00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{void}\ sort(std::vector<int>\&\ data)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ mergeSort(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ right,\ \textcolor{keywordtype}{int}\ depth\ =\ 0);}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{void}\ merge(std::vector<int>\&\ arr,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ mid,\ \textcolor{keywordtype}{int}\ right);}
+\DoxyCodeLine{00012\ \};}
+
+\end{DoxyCode}

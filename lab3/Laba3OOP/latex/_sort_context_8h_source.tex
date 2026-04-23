@@ -1,0 +1,22 @@
+\doxysection{Sort\+Context.\+h}
+\hypertarget{_sort_context_8h_source}{}\label{_sort_context_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}ISorter.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_sort_context}{SortContext}}\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00006\ \ \ \ \ \doxymbox{\hyperlink{class_i_sorter}{ISorter}}*\ sorter;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ setSorter(\doxymbox{\hyperlink{class_i_sorter}{ISorter}}*\ s)\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ sorter\ =\ s;}
+\DoxyCodeLine{00011\ \ \ \ \ \}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ execute(std::vector<int>\&\ data)\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (sorter)}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ sorter-\/>sort(data);}
+\DoxyCodeLine{00016\ \ \ \ \ \}}
+\DoxyCodeLine{00017\ \};}
+
+\end{DoxyCode}

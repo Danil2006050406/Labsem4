@@ -1,0 +1,100 @@
+\doxysection{ui\+\_\+\+Main\+Window.\+h}
+\hypertarget{ui___main_window_8h_source}{}\label{ui___main_window_8h_source}\index{build/Desktop\_Qt\_6\_11\_0\_MinGW\_64\_bit-\/Debug/Lab3OOP\_autogen/include/ui\_MainWindow.h@{build/Desktop\_Qt\_6\_11\_0\_MinGW\_64\_bit-\/Debug/Lab3OOP\_autogen/include/ui\_MainWindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'MainWindow.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.11.0}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMainWindow>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_ui___main_window}{Ui\_MainWindow}}}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ QWidget\ *centralwidget;}
+\DoxyCodeLine{00028\ \ \ \ \ QVBoxLayout\ *verticalLayout;}
+\DoxyCodeLine{00029\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00030\ \ \ \ \ QLabel\ *label;}
+\DoxyCodeLine{00031\ \ \ \ \ QLineEdit\ *sizeInput;}
+\DoxyCodeLine{00032\ \ \ \ \ QPushButton\ *runButton;}
+\DoxyCodeLine{00033\ \ \ \ \ QLabel\ *resultLabel;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QMainWindow\ *\doxymbox{\hyperlink{class_main_window}{MainWindow}})}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_main_window}{MainWindow}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_main_window}{MainWindow}}-\/>setObjectName(\textcolor{stringliteral}{"{}MainWindow"{}});}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_main_window}{MainWindow}}-\/>resize(400,\ 300);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ centralwidget\ =\ \textcolor{keyword}{new}\ QWidget(\doxymbox{\hyperlink{class_main_window}{MainWindow}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ centralwidget-\/>setObjectName(\textcolor{stringliteral}{"{}centralwidget"{}});}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ verticalLayout\ =\ \textcolor{keyword}{new}\ QVBoxLayout(centralwidget);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ verticalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ label\ =\ \textcolor{keyword}{new}\ QLabel(centralwidget);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ label-\/>setObjectName(\textcolor{stringliteral}{"{}label"{}});}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(label);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ sizeInput\ =\ \textcolor{keyword}{new}\ QLineEdit(centralwidget);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ sizeInput-\/>setObjectName(\textcolor{stringliteral}{"{}sizeInput"{}});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(sizeInput);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ verticalLayout-\/>addLayout(horizontalLayout);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ runButton\ =\ \textcolor{keyword}{new}\ QPushButton(centralwidget);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ runButton-\/>setObjectName(\textcolor{stringliteral}{"{}runButton"{}});}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(runButton);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ resultLabel\ =\ \textcolor{keyword}{new}\ QLabel(centralwidget);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ resultLabel-\/>setObjectName(\textcolor{stringliteral}{"{}resultLabel"{}});}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ resultLabel-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(resultLabel);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_main_window}{MainWindow}}-\/>setCentralWidget(centralwidget);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ retranslateUi(\doxymbox{\hyperlink{class_main_window}{MainWindow}});}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\doxymbox{\hyperlink{class_main_window}{MainWindow}});}
+\DoxyCodeLine{00075\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QMainWindow\ *\doxymbox{\hyperlink{class_main_window}{MainWindow}})}
+\DoxyCodeLine{00078\ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_main_window}{MainWindow}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Lab3\ OOP\ -\/\ Merge\ Sort"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ label-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Array\ size:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ sizeInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}e.g.\ 100000"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ runButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Run\ Sort"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ resultLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Results\ will\ appear\ here..."{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00084\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_ui_1_1_main_window}{MainWindow}}:\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_ui___main_window}{Ui\_MainWindow}}\ \{\};}
+\DoxyCodeLine{00090\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_MAINWINDOW\_H}}
+
+\end{DoxyCode}
